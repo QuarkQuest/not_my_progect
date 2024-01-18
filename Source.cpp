@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<math.h>
 #include<time.h>
-void output(int** a, int n) {//функция вывода матрицы
+void output(int** a, int n) {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			printf("%4d", a[i][j]);
@@ -32,7 +32,6 @@ bool proverka(int **a, int n) {
 	return true;
 }
 int main() {
-	//матрица 
 	int n;
 	srand(time(NULL));
 	scanf("%d", &n);
